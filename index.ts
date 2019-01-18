@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 //const nombre = "Ian";
 //console.log(`Mi nombre es ${nombre}`);
-const server = new Server();
+const server = Server.instance;
 
 //Configurar Body-Parser - Antes de la Ruta
 server.app.use(bodyParser.urlencoded({extended:true}));
